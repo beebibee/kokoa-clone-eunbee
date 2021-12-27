@@ -80,6 +80,17 @@
   animation-delay: 0.8s;
 }
 
+@keyframes notificationAnimation2 {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: none;
+  }
+}
 .heart {
   display: flex;
   justify-content: center;
@@ -87,6 +98,8 @@
   position: absolute;
   bottom: 40px;
   left: 40px;
+
+  animation: notificationAnimation2 2s ease-in-out infinite;
 }
 
 .heart img {

@@ -28,12 +28,29 @@
   align-items: center;
   padding: 30px 15px;
 }
+
+@keyframes slidetop {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .animation {
-  animation: fadeIN 2.8s ease-in-out;
+  transform: translateY(60px);
+  opacity: 0;
+  animation: slidetop 2s ease-in-out forwards;
 }
 
-.main-chat .message-row:last-child {
-  animation-delay: 1.2s;
+.animation:first-child {
+  animation-delay: 0.2s;
+}
+
+.animation:last-child {
+  animation-delay: 1.8s;
 }
 
 #chatting-screen .status-bar {
@@ -47,11 +64,19 @@
 .chat__timestamp {
   color: white;
   background-color: #9acdee;
-  padding: 10px;
+  padding-top: 10px;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .message-row {
+  width: 100%;
+  display: flex;
+  padding: 0px 15px;
+  margin-bottom: 24px;
+}
+
+.message-row .fadeIN {
   width: 100%;
   display: flex;
   padding: 0px 15px;
@@ -79,6 +104,7 @@
   margin-right: 8px;
   font-size: 17px;
   line-height: 20px;
+  color: var(--blue);
 }
 
 .message__info {
@@ -92,6 +118,9 @@
 }
 
 .message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .animation {
   justify-content: flex-end;
 }
 

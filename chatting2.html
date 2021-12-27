@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ Lucy - Snoopy Talk</title>
+  </head>
+
+  <body id="chatting-screen" style="background-color: rgb(199, 230, 255)">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column">
+        <span>08:02</span>
+      </div>
+
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header_column">
+        <a href="chat.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header_column">
+        <h1 class="alt-header__title">Wood Stock</h1>
+      </div>
+      <div class="alt-header_column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-chat">
+      <div class="chat__timestamp">Saturday,December 25, 2021</div>
+
+      <div class="message-row">
+        <div class="animation">
+          <img src="profile/friend_04.png" />
+          <div class="message-row__content">
+            <span class="message__author">Wood Stock</span>
+            <div class="message__info">
+              <span class="message__bubble">Hey, did you see my cookies?</span>
+              <span class="message__time">08:00 AM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="animation">
+          <div class="message-row__content">
+            <div class="message__info">
+              <span class="message__bubble">Oh sorry, I ate it.</span>
+              <span class="message__time">10:30 AM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+
+      <div class="reply__column">
+        <input type="text" placeholder="Write a messsage" />
+        <i class="far fa-grin fa-lg"></i>
+        <button>
+          <i class="fas fa-paw"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <img src="no-mobile.png" />
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

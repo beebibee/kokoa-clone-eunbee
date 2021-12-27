@@ -24,3 +24,35 @@
   color: white;
   text-decoration: none;
 }
+
+.settings__setting__logout {
+  padding: 40px 0px;
+  border-bottom: none;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting__logout i {
+  margin-right: 20px;
+  font-size: 21px;
+}
+
+.fa-plus-circle {
+  color: tomato;
+}
+
+.settings__setting__display {
+  padding: 20px 0px;
+  border-bottom: var(--screen-border);
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+.fa-sun {
+  margin-right: 20px;
+}
+.fa-plus-circle {
+  margin-left: 10px;
+}
