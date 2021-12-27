@@ -1,0 +1,56 @@
+.nav {
+  background-color: var(--skyblue);
+  background-size: 110%;
+  background-image: url("../../icon/Asset 25.png");
+  padding: 5px 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__button img {
+  width: 60px;
+}
+
+.nav__link {
+  position: relative;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+.bubble img {
+  width: 40px;
+  position: relative;
+}
+.bubble span {
+  position: absolute;
+  left: 15.5px;
+  bottom: 12px;
+  font-size: 18px;
+  color: tomato;
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.heart img {
+  width: 30px;
+}

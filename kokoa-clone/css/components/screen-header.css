@@ -1,0 +1,21 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  background-color: var(--skyblue);
+  position: fixed;
+  top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.screen-header__title {
+  font-size: 35px;
+  color: white;
+}
+
+.screen-header__icons img {
+  width: 25px;
+  margin-left: 20px;
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Open+Sans:wght@300;400&display=swap");
+@import "reset.css";
+@import "variable.css";
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+
+/* screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/setting.css";
+
+body {
+  background-color: #9acdee;
+  font-family: "Itim", cursive;
+  padding-top: 110px;
+  overflow-y: scroll;
+}

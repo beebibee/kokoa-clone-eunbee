@@ -1,0 +1,26 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--skyblue);
+  position: fixed;
+  top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.alt-header__title {
+  font-size: 32px;
+  color: white;
+}
+
+.alt-header_column:first-child {
+  margin-right: auto;
+  color: white;
+}
+.alt-header_column:last-child {
+  margin-left: auto;
+  color: white;
+}

@@ -1,0 +1,72 @@
+.login-header {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header__title {
+  font-family: "Lilita One", cursive;
+  font-size: 35px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.login-header__title2 {
+  margin-bottom: 30px;
+  font-family: "Lilita One", cursive;
+  font-size: 55px;
+  color: white;
+}
+.login-header__text {
+  width: 60%;
+  line-height: 20px;
+  font-size: 17px;
+  color: rgb(41, 121, 187);
+}
+.login-header img {
+  width: 250px;
+  margin-top: 30px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+  font-family: "Itim", cursive;
+}
+
+#login-form input {
+  border: none;
+  border-radius: 20px;
+  padding: 17px 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#login-form input::placeholder {
+  color: rgb(200, 200, 200);
+}
+
+#login-form input:nth-child(3) {
+  background-color: rgb(84, 153, 243);
+  color: white;
+  height: 55px;
+  font-size: 22px;
+  cursor: pointer;
+  background-image: url("../../icon/asset 26.png");
+  background-size: 102%;
+}
+
+#login-form input:not([type="submit"]):focus {
+  color: var(--blue);
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  color: var(--blue);
+}

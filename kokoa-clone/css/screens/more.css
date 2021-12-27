@@ -1,0 +1,69 @@
+.main-screen {
+  padding-bottom: 90px;
+}
+
+.weather {
+  border-top: var(--screen-border);
+  border-bottom: var(--screen-border);
+  padding-top: 35px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather__snoopy-land {
+  font-size: 18px;
+  background-color: rgb(213, 233, 255);
+  width: 120px;
+  text-align: center;
+  padding: 5px 0px;
+  border-radius: 20px;
+}
+
+.weather__day {
+  font-size: 20px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  color: var(--dark-brown);
+}
+
+.weather__day__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather__today__tem {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.weather__today__tem span {
+  font-size: 35px;
+  margin-left: 8px;
+}
+
+.weather__today__tem img {
+  width: 55px;
+  height: 55px;
+}
+
+.ad__title {
+  font-size: 19px;
+  padding: 10px 0px;
+  display: block;
+  justify-content: center;
+  padding: 15px 0px;
+  color: var(--dark-brown);
+}
+.snoopy-now-box {
+  display: flex;
+  justify-content: center;
+}
+.snoopy-now-img {
+  width: 100%;
+  border-radius: 10px;
+}
