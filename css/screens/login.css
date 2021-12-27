@@ -62,6 +62,7 @@
   padding: 17px 20px;
   margin-bottom: 10px;
   font-size: 15px;
+  font-family: "Itim", cursive;
 }
 
 #login-form input::placeholder {
