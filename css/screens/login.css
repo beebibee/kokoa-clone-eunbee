@@ -31,9 +31,22 @@
   font-size: 17px;
   color: rgb(41, 121, 187);
 }
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: none;
+  }
+}
 .login-header img {
   width: 250px;
   margin-top: 30px;
+  animation: notificationAnimation 2.5s ease-in-out infinite;
 }
 
 #login-form {

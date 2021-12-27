@@ -67,3 +67,22 @@
   width: 100%;
   border-radius: 10px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.1);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.weather__img {
+  animation: heartBeat 1.3s linear infinite;
+}

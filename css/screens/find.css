@@ -133,7 +133,7 @@
   }
   50% {
     color: tomato;
-    transform: scale(1.5);
+    transform: scale(10);
   }
   100% {
     color: white;
