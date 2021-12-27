@@ -9,6 +9,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* screens */
 @import "screens/login.css";
@@ -16,10 +17,9 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/setting.css";
+@import "screens/chatting.css";
+@import "screens/chats.css";
 
 body {
-  background-color: #9acdee;
   font-family: "Itim", cursive;
-  padding-top: 110px;
-  overflow-y: scroll;
 }

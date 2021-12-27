@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings - Snoopy Talk</title>
+    <title>Chat w/ Lucy - Snoopy Talk</title>
   </head>
 
-  <body style="background-color: white">
+  <body id="chatting-screen" style="background-color: rgb(199, 230, 255)">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
@@ -26,99 +26,104 @@
       </div>
     </div>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__button">
-          <a class="nav__link" href="friends.html"
-            ><img src="icon/Asset 16.png"
-          /></a>
-        </li>
-        <li class="nav__button">
-          <a class="nav__link" href="chat.html">
-            <div class="bubble">
-              <img src="icon/Asset 14.png" />
-              <span class="nav__notification">2</span>
-            </div>
-            <img src="icon/Asset 17.png"
-          /></a>
-        </li>
-        <li class="nav__button">
-          <a class="nav__link" href="find.html"
-            ><img src="icon/Asset 18.png"
-          /></a>
-        </li>
-        <li class="nav__button">
-          <a class="nav__link" href="more.html">
-            <div class="heart">
-              <img src="icon/Asset 15.png" />
-            </div>
-            <img src="icon/Asset 19.png"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-
     <header class="alt-header">
       <div class="alt-header_column">
-        <a href="more.html">
+        <a href="chat.html">
           <i class="fas fa-angle-left fa-2x"></i>
         </a>
       </div>
       <div class="alt-header_column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">Luccy</h1>
       </div>
       <div class="alt-header_column">
-        <i class="fas fa-search fa-lg"></i>
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i>
-            <span>Notices</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-flask"></i>
-            <span>Snoopy Lab</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-info-circle"></i>
-            <span>Version</span>
-          </div>
-          <div class="settings__setting-column">Latest Version</div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-lock"></i>
-            <span>Privacy</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bell"></i>
-            <span>Notifications</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-user-friends"></i>
-            <span>Friends</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-      </ul>
-    </main>
+    <main class="main-chat">
+      <div class="chat__timestamp">Saturday,December 27, 2021</div>
+   
 
+    <div class="message-row">
+      <img src="profile/friend_01.png" />
+      <div class="message-row__content">
+        <span class="message__author">Luccy</span>
+        <div class="message__info">
+          <span class="message__bubble"
+            >Snoopy!</br>What are you doing this weekend?</span
+          >
+          <span class="message__time">20:15PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-row message-row--own">
+      <div class="message-row__content">
+        <div class="message__info">
+          <span class="message__bubble"
+            >I have no plan</span
+          >
+          <span class="message__time">20:17 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-row">
+      <img src="profile/friend_01.png" />
+      <div class="message-row__content">
+        <span class="message__author">Luccy</span>
+        <div class="message__info">
+          <span class="message__bubble"
+            >How about watching movie</br>at my home?</span
+          >
+          <span class="message__time">20:19 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message__emoji">
+      <span>20:22 PM</span>
+      <img src="emoji.png">
+    </div>
+
+    <div class="message-row">
+      <img src="profile/friend_01.png" />
+      <div class="message-row__content">
+        <span class="message__author">Luccy</span>
+        <div class="message__info">
+          <span class="message__bubble"
+            >When will you come over </br>to my house?</span
+          >
+          <span class="message__time">20:22 PM</span>
+        </div>
+      </div>
+    </div>
+      
+    
+  </main>
+
+  <form class="reply">
+
+    <div class="reply__column">
+      <i class="far fa-plus-square fa-lg"></i>
+    </div>
+
+    <div class="reply__column">
+      <input type="text" placeholder="Write a messsage"/>
+      <i class="far fa-grin fa-lg"></i>
+      <button>
+        <i class="fas fa-paw"></i>
+      </button>
+    </div>
+
+  </form>
+
+  <div id="no-mobile">
+    <img src="no-mobile.png" />
+    <span>Your screen is too big</span>
+     </div>
+     
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

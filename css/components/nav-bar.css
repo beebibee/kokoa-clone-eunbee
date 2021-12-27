@@ -22,6 +22,18 @@
   position: relative;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .bubble {
   display: flex;
   justify-content: center;
@@ -29,6 +41,7 @@
   position: absolute;
   bottom: 40px;
   left: 30px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 .bubble img {
   width: 40px;
@@ -40,6 +53,31 @@
   bottom: 12px;
   font-size: 18px;
   color: tomato;
+}
+@keyframes apeearBtnAnimation {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__button {
+  transform: translateY(60px);
+  opacity: 0;
+  animation: apeearBtnAnimation 0.3s ease-in-out forwards;
+}
+.nav__button:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav__button:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav__button:last-child {
+  animation-delay: 0.8s;
 }
 
 .heart {
@@ -53,4 +91,8 @@
 
 .heart img {
   width: 30px;
+}
+
+.nav {
+  z-index: 1;
 }
