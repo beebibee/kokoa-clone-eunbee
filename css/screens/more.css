@@ -1,5 +1,5 @@
-.main-screen {
-  padding-bottom: 90px;
+.main-screen_more {
+  padding: 130px var(--horizontal-space) 130px;
 }
 
 .weather {
