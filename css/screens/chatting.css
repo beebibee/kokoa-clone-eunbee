@@ -142,7 +142,7 @@
   padding: 0px 15px;
   margin-bottom: 24px;
   justify-content: flex-end;
-  align-items: end;
+  align-items: flex-end;
 }
 .message__emoji span {
   display: block;
